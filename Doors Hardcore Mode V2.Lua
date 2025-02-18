@@ -4,13 +4,10 @@ wait(2) require(game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game).c
 -- Sprint Bar
 loadstring(game:HttpGet("https://raw.githubusercontent.com/MuhXd/DoorSuff/main/OtherSuff/Sprint"))()
 
---Script Speed Bypass
-loadstring(game:HttpGet('https://raw.githubusercontent.com/finngameandglitch/bypass/main/bypass'))()
-
 -- Cease
 coroutine.wrap(function()
     while true do
-        wait(325)
+        wait(200)
         game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
         wait(0)
 loadstring(game:HttpGet("https://pastefy.app/ofutwkjb/raw"))()
