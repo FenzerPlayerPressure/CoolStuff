@@ -1,28 +1,6 @@
 require(game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game).caption("Hardcore Initiated",true)
 wait(2) require(game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game).caption("Credits To Ping,Noonie And Chrono",true)
 
--- horror ambience
-local function getGitSoundId(GithubSoundPath: string, AssetName: string): Sound
-    local Url = GithubSoundPath
-
-    if not isfile(AssetName..".mp3") then 
-        writefile(AssetName..".mp3", game:HttpGet(Url)) 
-    end
-
-    local Sound = Instance.new("Sound")
-    Sound.SoundId = getcustomasset(AssetName..".mp3", true)
-    return Sound 
-end
-
-local CustomMusic = getGitSoundId("https://github.com/nervehammer1/throwawaystuff/raw/refs/heads/main/NightmareAmbient.mp3", "NightmareModeAmbient")
-CustomMusic.Parent = game:GetService("SoundService")
-CustomMusic.Looped = true
-CustomMusic:Play()
-
-end
-
-end)()
-
 -- Sprint Bar
 loadstring(game:HttpGet("https://raw.githubusercontent.com/MuhXd/DoorSuff/main/OtherSuff/Sprint"))()
 
