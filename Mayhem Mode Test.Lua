@@ -1,17 +1,6 @@
 require(game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game).caption("Made By Oof",true)
 wait(2) require(game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game).caption("Test Version By Rob",true)
 
----====== Load achievement giver ======---
-local achievementGiver = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors/Custom%20Achievements/Source.lua"))()
-
----====== Display achievement ======---
-achievementGiver({
-    Title = "Combined Mode started",
-    Desc = "have so fun!",
-    Reason = "You executed the Combined mode script.",
-    Image = "rbxassetid://107161730313394"
-})
-
 --Cave ambience
 local sound = Instance.new("Sound")
 
