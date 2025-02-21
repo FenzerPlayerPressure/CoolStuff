@@ -1,6 +1,7 @@
 require(game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game).caption("You: What Is This Place?, Im Lost....?",true)
 wait(2) require(game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game).caption("You: I Didn't Feel Safe, I Will Escape This Place",true)
 wait(2) require(game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game).caption("YAAAAAY FINALLY FIXED And Fuck U Uner",true)
+
 -- Rooms Theme
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Script5039392/Script/main/Hotel%20rooms.lua"))()
 
