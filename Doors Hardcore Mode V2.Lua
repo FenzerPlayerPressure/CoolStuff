@@ -83,3 +83,15 @@ coroutine.wrap(function()
         end
 
         end)()
+
+-- A90
+coroutine.wrap(function()
+    while true do
+        wait(150)
+        game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
+        wait(0)
+loadstring(game:HttpGet("https://pastebin.com/raw/DsS87QeW"))()
+
+end
+
+end)()
