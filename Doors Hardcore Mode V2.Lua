@@ -95,3 +95,37 @@ loadstring(game:HttpGet("https://pastebin.com/raw/DsS87QeW"))()
 end
 
 end)()
+
+--Frostbite
+coroutine.wrap(function()
+wait(160)
+game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
+loadstring(game:HttpGet("https://pastefy.app/Zb1au2BU/raw"))()
+
+end
+
+end)()
+
+-- Ripper
+coroutine.wrap(function()
+    while true do
+        wait(108)
+        game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
+        wait(0)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/huyhoanphuc/testhshs/refs/heads/main/hshsbsbshripper"))(
+
+end 
+
+end)()
+
+-- Deer God
+coroutine.wrap(function()
+    while true do
+        wait(230)
+        game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
+        wait(0)
+loadstring(game:HttpGet("https://pastefy.app/17nNEGQe/raw"))()
+
+end
+
+end)()
