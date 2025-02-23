@@ -1,6 +1,6 @@
 require(game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game).caption("Hardcore Initiated",true)
 wait(2) require(game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game).caption("Credits To Ping,Noonie And Chrono",true)
-
+wait(2) require(game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game).caption("Doors Impossible Hardcore Mayhem Remnant Mode🤑👍🏼",true)
 -- Seek Redesign 
 loadstring(game:HttpGet('https://raw.githubusercontent.com/StovenChaos/Doors/main/Old%20seek.lua'))()
 
@@ -43,25 +43,6 @@ coroutine.wrap(function()
         wait(0.0005)
         local ohmygah = Instance.new("Folder")
         ohmygah.Parent = workspace.CurrentRooms[game.ReplicatedStorage.GameData.LatestRoom.Value]
-    end
-end)()
-
--- Optional Seek Eyes 2 it might lag your device
-coroutine.wrap(function()
-    while true do
-        wait(0.005)
-        game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
-workspace.CurrentRooms[game.ReplicatedStorage.GameData.LatestRoom.Value].ChildAdded:Connect(function(seekeye)
-	if seekeye.Name == "Eye" then
-		wait(0.0005)
-		local getSeek:Model = game:GetObjects("rbxassetid://11717372116")[1]
-		getSeek.Parent = workspace.CurrentRooms[game.ReplicatedStorage.GameData.LatestRoom.Value].Folder
-		getSeek:PivotTo(workspace.CurrentRooms[game.ReplicatedStorage.GameData.LatestRoom.Value].Eye.Black.CFrame)
-		workspace.CurrentRooms[game.ReplicatedStorage.GameData.LatestRoom.Value].Eye:Destroy()
-	else
-
-	end
-end)
     end
 end)()
 
