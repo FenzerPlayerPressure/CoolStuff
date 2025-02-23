@@ -2,6 +2,15 @@ require(game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game).caption("
 wait(2) require(game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game).caption("You: I Didn't Feel Safe, I Will Escape This Place",true)
 wait(2) require(game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game).caption("YAAAAAY FINALLY FIXED And Fuck U Uner",true)
 
+-- Starjug
+loadstring(game:HttpGet("https://raw.githubusercontent.com/notpoiu/Scripts/refs/heads/main/StarJug.lua"))()
+
+-- Scanner
+loadstring(game:HttpGet("https://raw.githubusercontent.com/notpoiu/Scripts/main/Scanner.lua"))()
+
+-- Gummy Flashlight 
+loadstring(game:HttpGet("https://raw.githubusercontent.com/K0t1n/Public/main/Gummy%20Flashlight.lua"))()
+
 -- Rooms Theme
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Script5039392/Script/main/Hotel%20rooms.lua"))()
 
