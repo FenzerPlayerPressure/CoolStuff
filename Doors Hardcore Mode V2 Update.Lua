@@ -1,6 +1,70 @@
 require(game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game).caption("Hardcore Initiated",true)
 wait(2) require(game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game).caption("Credits To Ping,Noonie And Chrono",true)
 
+-- Seek Redesign 
+loadstring(game:HttpGet('https://raw.githubusercontent.com/StovenChaos/Doors/main/Old%20seek.lua'))()
+
+-- Seek Music
+coroutine.wrap(function()
+function GitAud(soundgit,filename)
+    SoundName=tostring(SoundName)
+    local url=soundgit
+    local FileName = filename
+    writefile(FileName..".mp3", game:HttpGet(url))
+    return (getcustomasset or getsynasset)(FileName..".mp3")
+end
+
+function CustomGitSound(soundlink, vol, filename)
+    local Sound = Instance.new("Sound")
+    Sound.SoundId = GitAud(soundlink, filename)
+    Sound.Parent = workspace
+    Sound.Volume = 0
+    Sound:Play()
+end
+
+CustomGitSound("https://github.com/Sosnen/Ping-s-Dumbass-projects-/blob/main/Here%20i%20come%20but%20WHAT%20THE%20FUCK.mp3?raw=true", 1, "Hereicomeseekog")
+
+local function GetGitSoundID(GithubSnd,SoundName)
+		SoundName=tostring(SoundName)
+		local url=GithubSnd
+		SoundName=tostring(SoundName)
+		local url=GithubSnd
+		FileName = SoundName
+		writefile("customObject_Sound_"..FileName..".mp3", game:HttpGet(url))
+		return (getcustomasset or getsynasset)("customObject_Sound_"..FileName..".mp3")
+	end
+end)()
+
+--Optional Seek Eyes it might lag your device
+coroutine.wrap(function()
+    while true do
+        wait(0.0005)
+        game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
+        wait(0.0005)
+        local ohmygah = Instance.new("Folder")
+        ohmygah.Parent = workspace.CurrentRooms[game.ReplicatedStorage.GameData.LatestRoom.Value]
+    end
+end)()
+
+-- Optional Seek Eyes 2 it might lag your device
+coroutine.wrap(function()
+    while true do
+        wait(0.005)
+        game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
+workspace.CurrentRooms[game.ReplicatedStorage.GameData.LatestRoom.Value].ChildAdded:Connect(function(seekeye)
+	if seekeye.Name == "Eye" then
+		wait(0.0005)
+		local getSeek:Model = game:GetObjects("rbxassetid://11717372116")[1]
+		getSeek.Parent = workspace.CurrentRooms[game.ReplicatedStorage.GameData.LatestRoom.Value].Folder
+		getSeek:PivotTo(workspace.CurrentRooms[game.ReplicatedStorage.GameData.LatestRoom.Value].Eye.Black.CFrame)
+		workspace.CurrentRooms[game.ReplicatedStorage.GameData.LatestRoom.Value].Eye:Destroy()
+	else
+
+	end
+end)
+    end
+end)()
+
 -- Sprint Bar
 loadstring(game:HttpGet("https://raw.githubusercontent.com/MuhXd/DoorSuff/main/OtherSuff/Sprint"))()
 
