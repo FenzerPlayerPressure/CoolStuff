@@ -34,7 +34,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/huyhoanggphuc/Entity-
 
 end
 
-end
+end)()
 
 -- Rebound Classic
 coroutine.wrap(function()
