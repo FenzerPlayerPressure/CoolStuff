@@ -1,20 +1,9 @@
 require(game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game).caption("Hardcore Initiated",true)
 wait(2) require(game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game).caption("Credits To Ping,Noonie And Chrono",true)
-wait(2) require(game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game).caption("Doors Impossible Hardcore Mayhem Remnant Mode🤑👍🏼",true)
+wait(2) require(game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game).caption("Doors Impossible Hardcore Mayhem Remnant Mode XD",true)
 
 -- Seek Redesign 
 loadstring(game:HttpGet('https://raw.githubusercontent.com/StovenChaos/Doors/main/Old%20seek.lua'))()
-
---Optional Seek Eyes it might lag your device
-coroutine.wrap(function()
-    while true do
-        wait(0.0005)
-        game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
-        wait(0.0005)
-        local ohmygah = Instance.new("Folder")
-        ohmygah.Parent = workspace.CurrentRooms[game.ReplicatedStorage.GameData.LatestRoom.Value]
-    end
-end)()
 
 -- Sprint Bar
 loadstring(game:HttpGet("https://raw.githubusercontent.com/MuhXd/DoorSuff/main/OtherSuff/Sprint"))()
