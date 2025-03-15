@@ -1,0 +1,44 @@
+require(game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game).caption("Credits To Localplayer, Munciseek and icherrykardes",true)
+require(game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game).caption("So Mode Doesn't Have Entities (i will adding entities soon maybe)",true)
+
+-- Walls
+function convert(Room)
+    task.wait(1.5)
+    if Room:IsA("Model") then
+        if tonumber(Room.Name) ~= nil then
+            for _, v in pairs(Room.Parts:GetDescendants()) do
+                if v:IsA("Part") or v:IsA("BasePart") or v:IsA("MeshPart") or v:IsA("UnionOperation") then
+                    if v.Material == Enum.Material.Wood or v.Material == Enum.Material.WoodPlanks then
+                        v.Color = Color3.fromRGB(60, 60, 60)
+                        v.Material = Enum.Material.Brick
+                    end
+                end
+            end
+
+-- Floor
+loadstring(game:HttpGet("https://raw.githubusercontent.com/RBXDM/ScrtptsMode/refs/heads/main/Inventory/Theme/Mines"))()
+
+-- Sprint bar
+loadstring(game:HttpGet("https://pastebin.com/raw/uEFd8K7x"))()
+
+-- Door Material
+coroutine.wrap(function()
+    while true do
+        wait(0.0005)
+workspace.CurrentRooms[game.ReplicatedStorage.GameData.LatestRoom.Value].Door.Door.Open.SoundId = "rbxassetid://833871080"
+workspace.CurrentRooms[game.ReplicatedStorage.GameData.LatestRoom.Value]:FindFirstChild("Door"):FindFirstChild("Door").Material = "Slate"
+workspace.CurrentRooms[game.ReplicatedStorage.GameData.LatestRoom.Value]:FindFirstChild("Door"):FindFirstChild("Door"):FindFirstChild("Sign").Material = "Slate"
+    end
+end)()
+
+-- Candle
+coroutine.wrap(function()
+    while true do
+        wait(5)
+        game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
+        wait(0)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ChronoAcceleration/Comet-Development/refs/heads/main/Doors/Assets/Storage/Candle.lua"))()
+
+end
+
+end)()
